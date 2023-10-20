@@ -1,3 +1,7 @@
+body {
+  overflow-y: hidden;
+}
+
 .appbar {
   width: 100vw;
   height: 100px;
@@ -22,4 +26,26 @@
   text-decoration: none;
   color: black;
   font-weight: 400;
+}
+
+.banner {
+  width: 1440px;
+  height: 400px;
+  border-radius: 5px;
+}
+
+.blackFilter {
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: absolute;
+  height: 400px;
+  width: 1440px;
+  border-radius: 5px;
+}
+
+.bannerSection {
+  width: 100vw;
+  height: 900px;
+  display: flex;
+  justify-content: center;
 }
