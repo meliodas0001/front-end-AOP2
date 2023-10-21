@@ -14,29 +14,59 @@
     <title>ESPORTE NEWS - HOME</title>
   </head>
   <body>
-    <header class="appbar">
-      <img src="./images/logo.svg" alt="LOGO ESPORTE NEWS" />
-      <a href="#">Noticias</a>
-      <a href="#">Ranking de Clubes</a>
-    </header>
+    <div class="container">
+      <header class="appbar">
+        <img src="./images/logo.svg" alt="LOGO ESPORTE NEWS" />
+        <a href="#">Noticias</a>
+        <a href="#">Ranking de Clubes</a>
+      </header>
 
-    <section class="bannerSection">
-      <div class="blackFilter">
-        <h1>
-          TODAS NOTICIAS<br />
-          DE ESPORTE AQUI
-        </h1>
-        <span
-          >No blog Esporte News você encontra <br />
-          muitas informações de esportes</span
-        >
-        <button class="newsButton">NOTICIAS</button>
-      </div>
-      <img
-        class="banner"
-        alt="Esporte News banner"
-        src="./images/Untitled-1.png"
-      />
-    </section>
+      <section class="bannerSection">
+        <div class="blackFilter">
+          <div class="bannerText">
+            <span class="bannerTitle">
+              TODAS NOTICIAS<br />
+              DE ESPORTE AQUI
+            </span>
+            <span class="bannerSubTitle"
+              >No blog Esporte News você encontra <br />
+              muitas informações de esportes</span
+            >
+            <button class="newsButton">NOTICIAS</button>
+          </div>
+          <img
+            class="banner"
+            alt="Esporte News banner"
+            src="./images/Frame 10.png"
+          />
+        </div>
+      </section>
+
+      <section class="footballInfo">
+        <div class="lastGame">
+          <h1>Ultimo Jogo</h1>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/0Gq4kqTz3NE?si=IL1w2tOViwJ1ejrb"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="rankingGame">
+          <div class="premiereLogo">
+            <div class="rankingTitle">
+              <h1>Ranking de Clubes</h1>
+              <span>LIGA PREMIERE</span>
+            </div>
+
+            <table class="rankingTable"></table>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
