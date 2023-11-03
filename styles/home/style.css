@@ -1,5 +1,6 @@
 body {
   overflow-y: hidden;
+  overflow-x: scroll;
 }
 
 .container {
@@ -147,18 +148,13 @@ body {
   display: flex;
   align-items: start;
   justify-content: start;
-}
-
-.rankingGame img {
-  position: relative;
-  z-index: 0;
+  flex-direction: column;
 }
 
 .rankingTitle {
   display: flex;
   gap: 26px;
   align-items: center;
-  position: absolute;
 }
 
 .rankingTitle h1 {
@@ -175,4 +171,17 @@ body {
 }
 
 .rankingTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.rankingTable td,
+th {
+  padding: 10px;
+  text-align: start;
+  margin: 0;
+}
+
+.rankingTable tr:nth-child(even) {
+  background-color: #ebeef3;
 }
