@@ -211,3 +211,59 @@ th {
   display: flex;
   gap: 30px;
 }
+
+.contact {
+  margin-top: 90px;
+  width: 1400px;
+  display: flex;
+  align-items: start;
+  gap: 150px;
+}
+
+.contactTitle {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.contact form {
+  display: flex;
+  align-items: start;
+  gap: 12px;
+  flex-direction: column;
+  width: 560px;
+}
+
+.contact form label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact form input {
+  width: 100%;
+  border-radius: 5px;
+  background: #9d9d9d;
+  border: none;
+  padding: 5px;
+  color: black;
+  outline: none;
+}
+
+.contact form textarea {
+  width: 100%;
+  border-radius: 5px;
+  background: #9d9d9d;
+  border: none;
+  padding: 5px;
+  color: black;
+  outline: none;
+  resize: none;
+  height: 100px;
+}
+
+.contact button {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 140px;
+  background-color: transparent;
+}
