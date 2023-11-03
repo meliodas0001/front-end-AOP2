@@ -185,3 +185,9 @@ th {
 .rankingTable tr:nth-child(even) {
   background-color: #ebeef3;
 }
+
+.firstOfTable {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
