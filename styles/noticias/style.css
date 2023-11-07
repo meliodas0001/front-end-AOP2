@@ -75,3 +75,25 @@ form button {
   border-radius: 5px;
   border: 1px solid black;
 }
+
+.mainNews {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  font-size: 36px;
+  font-weight: 500;
+  gap: 8px;
+}
+
+.news {
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  gap: 40px;
+}
+
+.news img {
+  width: 355px;
+  height: 270px;
+  object-fit: cover;
+}
