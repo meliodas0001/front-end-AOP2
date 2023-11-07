@@ -59,3 +59,28 @@
   font-weight: 400;
   color: black;
 }
+
+.seeYet {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 8px;
+  color: black;
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 100px;
+}
+
+.news {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: start;
+  max-width: 1400px;
+  overflow-x: scroll;
+}
+
+.news img {
+  width: 355px;
+  height: 270px;
+}
