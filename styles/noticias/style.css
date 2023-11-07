@@ -1,10 +1,9 @@
 .container {
-  width: 100vw;
-  height: 100%;
   display: flex;
   align-items: center;
-  justify-self: center;
+  justify-content: start;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .appbar {
@@ -35,11 +34,16 @@
 
 .newsLetter {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  width: 580px;
+  width: 1400px;
   margin-top: 100px;
   gap: 50px;
+}
+
+.newsLetter img {
+  width: 740px;
+  height: 500px;
 }
 
 .newsletterText {
@@ -83,6 +87,8 @@ form button {
   font-size: 36px;
   font-weight: 500;
   gap: 8px;
+  max-width: 1400px;
+  margin-top: 100px;
 }
 
 .news {
@@ -100,16 +106,74 @@ form button {
 
 .highlightedNews {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  height: 500px;
   gap: 50px;
   margin-top: 100px;
 }
 
 .highlightedNewsText {
   display: flex;
-  align-items: center;
+  align-items: start;
+  justify-content: start;
   flex-direction: column;
   gap: 28px;
   width: 567px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 50px;
+  padding: 80px;
+  margin-top: 100px;
+  box-shadow: 0px -5px 29px 0px rgba(0, 0, 0, 0.53);
+  margin-bottom: 5px;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 144px;
+}
+
+footer > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footerLogo img {
+  width: 144px;
+}
+
+.pagesFooter {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.pagesFooter a {
+  text-decoration: none;
+  color: black;
+}
+
+.footerButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px;
+  width: 200px;
+  background-color: transparent;
 }
