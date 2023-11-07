@@ -97,3 +97,19 @@ form button {
   height: 270px;
   object-fit: cover;
 }
+
+.highlightedNews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 100px;
+}
+
+.highlightedNewsText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 28px;
+  width: 567px;
+}
