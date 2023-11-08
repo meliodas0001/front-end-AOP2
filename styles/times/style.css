@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.appbar {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+
+  @media (max-width: 560px) {
+    gap: 15px;
+  }
+}
+
+.appbar img {
+  padding: 50px;
+
+  @media (max-width: 560px) {
+    padding: 10px;
+  }
+}
+
+.appbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
