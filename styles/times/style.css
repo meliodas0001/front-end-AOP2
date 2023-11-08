@@ -31,3 +31,46 @@
   color: black;
   font-weight: 400;
 }
+
+.teamList {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.teamSearch {
+  color: black;
+  font-size: 32px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.teamSearch input {
+  color: #7d7d7d;
+  font-size: 16px;
+  font-weight: 400;
+  width: 178px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.teamListGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 200px);
+  gap: 20px;
+  height: 800px;
+  max-height: 800;
+  overflow-y: scroll;
+}
+
+.teamListGrid img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+}
