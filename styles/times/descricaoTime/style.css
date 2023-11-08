@@ -31,3 +31,130 @@
   color: black;
   font-weight: 400;
 }
+
+.team {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 32px;
+  width: 1374px;
+  color: black;
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: 50px;
+}
+
+.teamDetail {
+  display: flex;
+  align-items: start;
+  gap: 40px;
+}
+
+.teamDetail img {
+  width: 300px;
+  height: 300px;
+}
+
+.teamDescription {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.teamInfo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.infos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.players {
+  margin-top: 100px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.playersList {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+  max-width: 1300px;
+  overflow-x: scroll;
+}
+
+.playersList img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 50px;
+  padding: 80px;
+  margin-top: 100px;
+  box-shadow: 0px -5px 29px 0px rgba(0, 0, 0, 0.53);
+  margin-bottom: 5px;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 144px;
+}
+
+footer > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footerLogo img {
+  width: 144px;
+}
+
+.pagesFooter {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.pagesFooter a {
+  text-decoration: none;
+  color: black;
+}
+
+.footerButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px;
+  width: 200px;
+  background-color: transparent;
+}
