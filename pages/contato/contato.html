@@ -14,43 +14,52 @@
     <title>Contato</title>
   </head>
   <body>
+    <header class="appbar">
+      <img src="../../images/logo.svg" alt="LOGO ESPORTE NEWS" />
+      <a href="./noticias/noticias.html">Noticias</a>
+      <a href="./times/times.html">Times</a>
+      <a href="#">Contato</a>
+    </header>
     <div class="container">
-      <header class="appbar">
-        <img src="../images/logo.svg" alt="LOGO ESPORTE NEWS" />
-        <a href="./noticias/noticias.html">Noticias</a>
-        <a href="./times/times.html">Times</a>
-        <a href="#">Contato</a>
-      </header>
       <section class="contact">
+        <div class="title_box">
+          <span class="title">Contato</span>
+          <span class="description"
+            >Se você possuí qualquer tipo de informação e queira que seja
+            exibida no blog envie essas informações para ser analisado e
+            posteriormente publicado</span
+          >
+        </div>
+
         <form action="" class="contact_form">
-          <div>
+          <div class="form_firstCol">
             <div>
-              <label for="">Email</label>
-              <input type="text" />
-              <span>Seu email para contato</span>
+              <label for="" class="label">Email</label>
+              <input type="text" class="input" />
+              <span class="description">Seu email para contato</span>
             </div>
 
             <div>
-              <label for="">Titulo</label>
-              <input type="text" />
-              <span>Seu email para contato</span>
+              <label for="" class="label">Titulo</label>
+              <input type="text" class="input" />
+              <span class="description">Seu email para contato</span>
             </div>
 
             <div>
-              <label for="">Descrição</label>
+              <label for="" class="label">Descrição</label>
               <textarea name="" id="" cols="30" rows="10"></textarea>
-              <span>Descreva as informações</span>
+              <span class="description">Descreva as informações</span>
             </div>
 
             <div>
-              <button type="submit">Enviar</button>
+              <button type="submit" class="input">Enviar</button>
             </div>
           </div>
 
-          <div>
-            <label for="">Imagem</label>
-            <input type="file" />
-            <span>Imagem da publicação</span>
+          <div class="form_secondCol">
+            <label for="" class="label">Imagem</label>
+            <input type="file" class="fileInput" />
+            <span class="description">Imagem da publicação</span>
           </div>
         </form>
       </section>
