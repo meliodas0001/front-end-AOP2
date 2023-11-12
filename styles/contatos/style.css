@@ -101,6 +101,7 @@ textarea {
   height: 219px;
   border-radius: 5px;
   border: 1px solid #5a5a5a;
+  resize: none;
 }
 
 .fileInput {
