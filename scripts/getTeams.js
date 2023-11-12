@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $.getJSON("../../data/teams.json", function (data) {
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < data.length; i++) {
       const team = data[i];
 
       if (team.team.national) continue;
