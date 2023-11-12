@@ -1,9 +1,16 @@
 $(document).ready(function () {
   $.getJSON("../../data/teams.json", function (data) {
-    data.forEach((team) => {
-      if (team.team.national) return;
-      addTeam(team);
-    });
+    for (let i = 0; i < 100; i++) {
+      const team = data[i];
+
+      if (team.team.national) continue;
+      if (team.team.logo === null) continue;
+      if (team.team.name === "Real Madrid") continue;
+
+      setTimeout(() => {
+        addTeam(team);
+      }, 1000);
+    }
   });
 
   function addTeam(team) {
