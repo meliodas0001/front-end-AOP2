@@ -7,9 +7,7 @@ $(document).ready(function () {
       if (team.team.logo === null) continue;
       if (team.team.name === "Real Madrid") continue;
 
-      setTimeout(() => {
-        addTeam(team);
-      }, 1000);
+      addTeam(team);
     }
   });
 
@@ -18,13 +16,26 @@ $(document).ready(function () {
       href: "./descricaoTime/descricaoTime.html?time=" + team.team.name,
     });
 
-    const newImage = $("<img>", {
-      src: `${team.team.logo}`,
-      alt: `imagem do time ${team.team.name}`,
+    loadImage(team.team.logo, team.team.name).then((img) => {
+      newAnchor.append(img);
+      $(".teamListGrid").append(newAnchor);
     });
+  }
 
-    newAnchor.append(newImage);
+  function loadImage(src, alt) {
+    return new Promise(function (resolve, reject) {
+      const img = new Image();
 
-    $(".teamListGrid").append(newAnchor);
+      img.onload = function () {
+        resolve(img);
+      };
+
+      img.onerror = function () {
+        reject("erro ao carregar iamgem");
+      };
+
+      img.src = src;
+      img.alt = `imagem do time ${alt}`;
+    });
   }
 });
